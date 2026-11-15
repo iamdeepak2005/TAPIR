@@ -25,28 +25,35 @@ Routing decisions are governed by three primary constraint mechanisms:
 ## Project Structure
 
 ```text
-├── config/
-│   ├── devices.yaml                  # System hardware and throttle definitions
-│   ├── prices.yaml                   # API token rates for cloud models
-│   └── experiment.yaml               # Hyperparameters, random seeds, bandit weights
-├── data/
-│   ├── raw/                          # Measured telemetry logs and raw JSON benchmark traces
-│   └── processed/                    # Response caches and preprocessed datasets
-├── src/
-│   ├── logger/                       # 1 Hz Telemetry logger (cross-platform system monitor)
-│   ├── thermal/                      # RC model identification, RLS parameter tracking
-│   ├── privacy/                      # Hybrid regex, NER, and sensitivity classifier
-│   ├── earlyexit/                    # Logit-lens early-exit transformer prototype
-│   ├── router/                       # Constrained LinUCB, difficulty predictor, cloud client
-│   ├── workload/                     # Poisson and bursty trace generation
-│   └── eval/                         # Benchmark harnesses, plotting routines, report generators
-├── results/
-│   ├── figures/                      # 300 DPI publication plots (Pareto curves, thermal traces)
-│   ├── tables/                       # Benchmark outputs in CSV and LaTeX (.tex) format
-│   └── report.md                     # Comprehensive experimental results and limitations
-├── .env.template                     # Cloud API credentials template
+.
 ├── LICENSE                           # MIT License
-└── README.md                         # Reproduction guide
+├── README.md                         # Reproduction guide
+├── requirements.txt                  # Python dependencies
+├── .gitignore                        # Git exclusion rules (ignores secrets & large models)
+└── tapir/
+    ├── .env.template                 # Cloud API credentials template
+    ├── compute_prop1_exceedance.py   # Proposition 1 empirical verification script
+    ├── detect_hardware.py            # Hardware discovery script
+    ├── download_deps.py              # Model & binary download automation
+    ├── config/
+    │   ├── devices.yaml              # System hardware and throttle definitions
+    │   ├── prices.yaml               # API token rates for cloud models
+    │   └── experiment.yaml           # Hyperparameters, random seeds, bandit weights
+    ├── data/
+    │   ├── raw/                      # Measured telemetry logs and raw JSON benchmark traces
+    │   └── processed/                # Response caches and preprocessed datasets
+    ├── src/
+    │   ├── logger/                   # 1 Hz Telemetry logger (cross-platform system monitor)
+    │   ├── thermal/                  # RC model identification, RLS parameter tracking
+    │   ├── privacy/                  # Hybrid regex, NER, and sensitivity classifier
+    │   ├── earlyexit/                # Logit-lens early-exit transformer prototype
+    │   ├── router/                   # Constrained LinUCB, difficulty predictor, cloud client
+    │   ├── workload/                 # Poisson and bursty trace generation
+    │   └── eval/                     # Benchmark harnesses, plotting routines, report generators
+    └── results/
+        ├── figures/                  # 300 DPI publication plots (Pareto curves, thermal traces)
+        ├── tables/                   # Benchmark outputs in CSV and LaTeX (.tex) format
+        └── report.md                 # Comprehensive experimental results and limitations
 ```
 
 ---
