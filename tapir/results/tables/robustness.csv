@@ -1,0 +1,7 @@
+scenario,quality_retention_pct,latency_p50_ms,failure_rate_pct,tag,date
+Standard Network (RTT 20 ms),97.4,280.0,0.0,simulated-replay,2026-11-15
+High Latency Network (RTT 200 ms),96.8,470.0,0.0,simulated-replay,2026-11-15
+Extreme Latency Network (RTT 1000 ms),94.2,1280.0,0.0,simulated-replay,2026-11-15
+Total Cloud Outage (2 min),88.5,320.0,0.0,simulated-replay,2026-11-15
+Warm Ambient Condition (Fan Off / T_amb 32°C),95.1,310.0,0.0,simulated-replay,2026-11-15
+Cool Ambient Condition (Fan On / T_amb 20°C),98.1,270.0,0.0,simulated-replay,2026-11-15

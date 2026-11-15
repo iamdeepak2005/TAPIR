@@ -1,0 +1,439 @@
+{
+  "metadata": {
+    "tag": "measured",
+    "device": "AMD Ryzen 5 (Zen 4 Mobile, 6 cores)",
+    "date": "2026-11-15",
+    "timestamp": "2026-11-15T07:02:01.644927+00:00",
+    "test_samples": 40
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_negative_rate": 0.0,
+    "overblocking_rate": 0.0,
+    "latency_mean_ms": 0.93,
+    "latency_p50_ms": 0.87,
+    "latency_p95_ms": 1.31,
+    "latency_p99_ms": 2.64,
+    "true_positives": 20,
+    "false_positives": 0,
+    "true_negatives": 20,
+    "false_negatives": 0
+  },
+  "detailed_predictions": [
+    {
+      "text": "How does gradient descent with momentum help navigate ill-conditioned loss surfaces?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 2.31,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.464
+    },
+    {
+      "text": "Please review this: Tax return documentation for taxpayer SSN: 219-45-8821, gross reported income $89,500.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 1.261,
+      "regex_entities": [
+        "regex:ssn(1)",
+        "classifier:sensitive(0.63)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.629
+    },
+    {
+      "text": "Please review this: NDA agreement between Horizon Robotics and Vertex AI: strictly confidential valuation terms.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.963,
+      "regex_entities": [
+        "regex:confidential_marking(2)",
+        "classifier:sensitive(0.62)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6205
+    },
+    {
+      "text": "Medical insurance claim #839102-A: reimbursement for surgical procedure billed at $12,450.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 1.122,
+      "regex_entities": [
+        "classifier:sensitive(0.59)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5915
+    },
+    {
+      "text": "Customer email contact: support@secureclient-holdings.co.uk, phone +1-555-839-2019.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.869,
+      "regex_entities": [
+        "regex:email(1)",
+        "regex:phone(1)",
+        "classifier:sensitive(0.59)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5919
+    },
+    {
+      "text": "Can you explain this topic: Compare synchronous and asynchronous input/output handling in high-throughput web servers.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.966,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3565
+    },
+    {
+      "text": "CONFIDENTIAL: Internal engineering architecture for upcoming product launch code-named Aurora. Do not disclose.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 1.029,
+      "regex_entities": [
+        "regex:confidential_marking(1)",
+        "classifier:sensitive(0.60)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5983
+    },
+    {
+      "text": "Internal vulnerability report: zero-day exploit in authentication handler, do not leak externally.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 1.06,
+      "regex_entities": [
+        "classifier:sensitive(0.54)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5363
+    },
+    {
+      "text": "Describe the life cycle of a massive star from main sequence to core-collapse supernova.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 1.144,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4087
+    },
+    {
+      "text": "Explain the thermodynamic concept of entropy and the second law of thermodynamics.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.921,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3619
+    },
+    {
+      "text": "Solve the quadratic equation 2x^2 + 5x - 3 = 0 using the quadratic formula.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 1.058,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4058
+    },
+    {
+      "text": "What is the difference between inductive reasoning and deductive reasoning in formal logic?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.896,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4087
+    },
+    {
+      "text": "Please review this: Patient medical history: Johnathan Doe, DOB 1978-04-12, diagnosis Stage II Hypertension.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 1.193,
+      "regex_entities": [
+        "regex:medical_record(1)",
+        "classifier:sensitive(0.58)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5757
+    },
+    {
+      "text": "Please review this: Patient blood test record: fasting glucose 142 mg/dL, cholesterol 240 mg/dL, Dr. Evans presiding.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.931,
+      "regex_entities": [
+        "classifier:sensitive(0.58)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5848
+    },
+    {
+      "text": "Can you explain this topic: Write a Python function to compute the greatest common divisor using Euclid's algorithm.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.883,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3383
+    },
+    {
+      "text": "Patient blood test record: fasting glucose 142 mg/dL, cholesterol 240 mg/dL, Dr. Evans presiding.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.572,
+      "regex_entities": [
+        "classifier:sensitive(0.54)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5376
+    },
+    {
+      "text": "Describe the process of photosynthesis and the role of chlorophyll in light absorption.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.768,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4165
+    },
+    {
+      "text": "Billing address: Sarah Connor, 742 Evergreen Terrace, Springfield, OR 97477, USA.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.905,
+      "regex_entities": [
+        "classifier:sensitive(0.59)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5915
+    },
+    {
+      "text": "Can you explain this topic: Explain the difference between supervised, unsupervised, and reinforcement learning.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.703,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3285
+    },
+    {
+      "text": "Can you explain this topic: How does gradient descent with momentum help navigate ill-conditioned loss surfaces?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.516,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3444
+    },
+    {
+      "text": "Can you explain this topic: Implement a merge sort algorithm in C++ with O(n log n) time complexity.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.796,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3447
+    },
+    {
+      "text": "Please review this: Database connection URI: postgresql://admin:SuperSecretPass992@db.internal.corp:5432/finance",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.863,
+      "regex_entities": [
+        "regex:email(1)",
+        "classifier:sensitive(0.61)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6147
+    },
+    {
+      "text": "Wire transfer confirmation: routing number 021000021, account 9481029482, beneficiary Jane Doe.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.928,
+      "regex_entities": [
+        "regex:ssn(1)",
+        "regex:phone(1)",
+        "classifier:sensitive(0.60)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5959
+    },
+    {
+      "text": "Can you explain this topic: Write a SQL query to calculate the rolling 7-day average of daily active users.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.799,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3172
+    },
+    {
+      "text": "Can you explain this topic: Explain the thermodynamic concept of entropy and the second law of thermodynamics.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.515,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.2976
+    },
+    {
+      "text": "Can you explain this topic: What is the function of the human hippocampus in memory consolidation and spatial navigation?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.756,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3447
+    },
+    {
+      "text": "Can you explain this topic: Explain the significance of the Rosetta Stone in deciphering ancient Egyptian hieroglyphics.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.842,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3405
+    },
+    {
+      "text": "Please review this: Internal vulnerability report: zero-day exploit in authentication handler, do not leak externally.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.54,
+      "regex_entities": [
+        "classifier:sensitive(0.60)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5995
+    },
+    {
+      "text": "Please review this: AWS root access keys: AKIAIOSFODNN7EXAMP12, secret key secret_key_value_here_corporate_root",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.807,
+      "regex_entities": [
+        "classifier:sensitive(0.61)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6143
+    },
+    {
+      "text": "Please review this: Patient Alice Walker, MRN 481920: diagnosis Acute Appendicitis. Prescribed Cefazolin 1g IV.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.873,
+      "regex_entities": [
+        "regex:medical_record(2)",
+        "classifier:sensitive(0.61)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6112
+    },
+    {
+      "text": "How do transformers handle positional information through rotary position embeddings (RoPE)?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.825,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4138
+    },
+    {
+      "text": "Please review this: Home mortgage application: applicant Michael Brown, social security number 092-11-4829.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.851,
+      "regex_entities": [
+        "regex:ssn(1)",
+        "classifier:sensitive(0.61)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6084
+    },
+    {
+      "text": "Tax return documentation for taxpayer SSN: 219-45-8821, gross reported income $89,500.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.502,
+      "regex_entities": [
+        "regex:ssn(1)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.4983
+    },
+    {
+      "text": "Please review this: Corporate acquisition term sheet: buyout price $120,000,000 for equity stake in Alpha Bio.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.988,
+      "regex_entities": [
+        "classifier:sensitive(0.62)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.6185
+    },
+    {
+      "text": "Write a SQL query to calculate the rolling 7-day average of daily active users.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.526,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.4565
+    },
+    {
+      "text": "Home mortgage application: applicant Michael Brown, social security number 092-11-4829.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.533,
+      "regex_entities": [
+        "regex:ssn(1)",
+        "classifier:sensitive(0.54)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5433
+    },
+    {
+      "text": "Translate the following phrase into conversational French: 'Where is the train station?'",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 2.858,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.415
+    },
+    {
+      "text": "Can you explain this topic: What are the main differences between TCP and UDP transport protocols in computer networks?",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.864,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3483
+    },
+    {
+      "text": "Patient medical history: Johnathan Doe, DOB 1978-04-12, diagnosis Stage II Hypertension.",
+      "true_label": 1,
+      "pred_label": 1,
+      "latency_ms": 0.613,
+      "regex_entities": [
+        "regex:medical_record(1)",
+        "classifier:sensitive(0.55)"
+      ],
+      "ner_entities": [],
+      "classifier_score": 0.5454
+    },
+    {
+      "text": "Can you explain this topic: Write an essay outlining the economic causes of the 1929 stock market crash.",
+      "true_label": 0,
+      "pred_label": 0,
+      "latency_ms": 0.854,
+      "regex_entities": [],
+      "ner_entities": [],
+      "classifier_score": 0.3508
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+# TAPIR Experiment Configuration
+
+random_seed: 42
+additional_seeds: [123, 456, 789, 1024]
+
+# Model selection (adjusted for 7.3 GB RAM)
+local_model:
+  name: "Qwen2.5-1.5B-Instruct"
+  # Using 1.5B variant due to RAM constraint (7.3 GB total)
+  # 3B variant would require ~3-4 GB for Q8 alone, leaving insufficient system RAM
+  quantizations:
+    - Q8_0    # ~1.6 GB
+    - Q5_K_M  # ~1.1 GB
+    - Q4_K_M  # ~0.9 GB
+
+early_exit_model:
+  name: "Qwen/Qwen2.5-0.5B"
+  # Smallest viable model for early-exit prototype (transformers/PyTorch)
+  runtime: "transformers"
+  note: "CPU-only, measured speedups labeled as prototype runtime"
+
+# Router configuration
+router:
+  algorithm: "constrained_linucb"
+  alpha: 1.0  # UCB exploration parameter (tuned on validation set)
+  actions:
+    - "local_q8"
+    - "local_q5"
+    - "local_q4"
+    - "local_early_exit"
+    - "cloud"
+
+  # Reward weights
+  weights:
+    w_q: 1.0      # quality
+    w_c: 0.3      # cloud cost
+    w_e: 0.1      # energy
+    w_l: 0.2      # latency
+    zeta: 0.5     # thermal penalty
+
+  # Thermal constraint
+  thermal:
+    T_max: 90       # Hard safety limit (°C)
+    T_soft: 80      # Soft penalty threshold (°C)
+    horizon_H: 60   # Prediction horizon (seconds)
+    z_sigma: 1.96   # 95% chance constraint (z-score)
+
+  # Privacy
+  privacy:
+    enforce_local_only: true  # Hard rule: sensitive requests never go to cloud
+
+# Throttle definition (A1)
+throttle:
+  clock_fraction: 0.85        # Below 85% of max clock
+  duration_seconds: 10        # For 10+ consecutive seconds
+  utilization_threshold: 0.90 # While CPU utilization > 90%
+
+# Workload configuration
+workload:
+  poisson_rates: [0.1, 0.5, 1.0]  # requests per second
+  bursty_burst_size: 10
+  bursty_interval: 30
+  sensitive_fraction: 0.15
+
+# Thermal model
+thermal_model:
+  rls_forgetting_factors: [0.97, 0.98, 0.99, 0.995]
+  prediction_horizons: [10, 30, 60]  # seconds
+
+# Bandit tuning
+bandit:
+  alpha_candidates: [0.1, 0.5, 1.0, 2.0, 5.0]
+  warm_start: true
+
+# Ablation flags
+ablations:
+  - "no_rls"
+  - "no_uncertainty_margin"
+  - "no_soft_penalty"
+  - "no_early_exit"
+  - "no_dynamic_quant"
+  - "no_privacy_rule"
+  - "no_difficulty_warmstart"
+
+# Robustness scenarios (A7)
+robustness:
+  network_rtt_ms: [20, 200, 1000]
+  cloud_outage_duration_s: 120
+  ambient_conditions: ["fan_on", "fan_off"]
+
+# LLM Judge for open-ended quality (A3)
+llm_judge:
+  model: null       # Fill in
+  temperature: 0
+  prompt_template: |
+    You are evaluating the quality of an AI response.
+    Reference answer (from cloud model): {reference}
+    Test answer (from local model): {test}
+    Rate the test answer from 1-5 on: accuracy, completeness, helpfulness.
+    Output JSON: {"accuracy": X, "completeness": X, "helpfulness": X, "overall": X}
+

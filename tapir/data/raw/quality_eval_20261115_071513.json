@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "tag": "measured",
+    "device": "AMD Ryzen 5 5625U with Radeon Graphics",
+    "date": "2026-11-15",
+    "timestamp": "2026-11-15T07:15:13.583884+00:00",
+    "evaluation_set": "MMLU reasoning + GSM8K math + held-out academic text"
+  },
+  "results": [
+    {
+      "quantization": "Q8_0",
+      "mmlu_accuracy_pct": 75.0,
+      "gsm8k_accuracy_pct": 66.67,
+      "perplexity": 13.84,
+      "tag": "measured",
+      "device": "AMD Ryzen 5 5625U with Radeon Graphics",
+      "date": "2026-11-15"
+    },
+    {
+      "quantization": "Q5_K_M",
+      "mmlu_accuracy_pct": 75.0,
+      "gsm8k_accuracy_pct": 66.67,
+      "perplexity": 13.9,
+      "tag": "measured",
+      "device": "AMD Ryzen 5 5625U with Radeon Graphics",
+      "date": "2026-11-15"
+    },
+    {
+      "quantization": "Q4_K_M",
+      "mmlu_accuracy_pct": 62.5,
+      "gsm8k_accuracy_pct": 50.0,
+      "perplexity": 14.4,
+      "tag": "measured",
+      "device": "AMD Ryzen 5 5625U with Radeon Graphics",
+      "date": "2026-11-15"
+    },
+    {
+      "quantization": "Early-Exit Prototype (PyTorch CPU)",
+      "mmlu_accuracy_pct": 62.5,
+      "gsm8k_accuracy_pct": 50.0,
+      "perplexity": 15.1,
+      "tag": "measured (prototype PyTorch CPU runtime)",
+      "device": "AMD Ryzen 5 5625U with Radeon Graphics",
+      "date": "2026-11-15"
+    }
+  ]
+}

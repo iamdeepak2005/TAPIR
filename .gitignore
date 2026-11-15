@@ -1,0 +1,48 @@
+# TAPIR - .gitignore
+
+# Environment secrets (HARD RULE 6: never commit keys)
+.env
+tapir/.env
+**/.env
+!*.env.template
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.egg
+venv/
+.venv/
+
+# GGUF model files (large)
+*.gguf
+
+# llama.cpp binaries
+tapir/bin/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Matplotlib cache
+.matplotlib/
+
+# Logs that shouldn't be committed (raw data IS committed)
+*.log.tmp
+
+# Scratch scripts
+tapir/setup_dirs.py
+tapir/check_pkgs.py
+tapir/update_device_info.py
+

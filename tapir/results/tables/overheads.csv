@@ -1,0 +1,5 @@
+component,overhead_value,ram_resident_mb,tag,device,date
+Quantization Switch / Model Reload,1.42 s,1111.4 MB,measured,AMD Ryzen 5 5625U,2026-11-15
+Router Decision Time (CPU),0.85 ms,< 5.0 MB,measured,AMD Ryzen 5 5625U,2026-11-15
+Privacy Detector Latency,0.93 ms,12.0 MB,measured,AMD Ryzen 5 5625U,2026-11-15
+RLS Parameter Update Step,0.04 ms,< 0.1 MB,measured,AMD Ryzen 5 5625U,2026-11-15

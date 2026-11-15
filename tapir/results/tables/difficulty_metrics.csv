@@ -1,0 +1,2 @@
+model,train_auc,test_auc,train_samples,test_samples,tag,device,date
+TF-IDF + LogisticRegression Difficulty Predictor,1.0,0.7188,20,8,measured,AMD Ryzen 5 (Zen 4 Mobile),2026-11-15

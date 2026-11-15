@@ -1,0 +1,25 @@
+{
+  "tag": "measured",
+  "device": "AMD Ryzen 5 (Zen 4 Mobile, 6 cores)",
+  "os": "Windows 11",
+  "date": "2026-11-15",
+  "timestamp": "2026-11-15T07:06:02.513148+00:00",
+  "duration_minutes": 5.0,
+  "csv_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\data\\raw\\telemetry_idle_test_20261115_123101.csv",
+  "stats": {
+    "samples": 300,
+    "max_gap_s": 1.002,
+    "temp_source": "degraded",
+    "power_source": "battery-derived",
+    "peak_temp_c": null,
+    "mean_temp_c": null,
+    "throttle_events_count": 0,
+    "total_throttle_seconds": 0,
+    "tokens_per_s_cv": 0.0
+  },
+  "degraded_metrics": [
+    "cpu_temp_c",
+    "gpu_temp_c",
+    "power_w (battery-derived)"
+  ]
+}

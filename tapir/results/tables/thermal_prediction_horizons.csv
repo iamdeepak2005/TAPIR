@@ -1,0 +1,4 @@
+horizon_seconds,fixed_rc_mae_c,fixed_rc_rmse_c,fixed_rc_sigma_h_c,persistence_mae_c,persistence_rmse_c,tag,device,date
+10,0.481,0.598,0.589,1.995,2.55,simulated (physics-anchored validation run),AMD Ryzen 5 (Zen 4 Mobile),2026-11-15
+30,0.746,0.903,0.864,5.455,6.868,simulated (physics-anchored validation run),AMD Ryzen 5 (Zen 4 Mobile),2026-11-15
+60,1.393,1.731,1.674,9.508,11.775,simulated (physics-anchored validation run),AMD Ryzen 5 (Zen 4 Mobile),2026-11-15

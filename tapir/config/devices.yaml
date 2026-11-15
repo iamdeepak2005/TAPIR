@@ -1,0 +1,41 @@
+# TAPIR Device Configuration
+# Detected: 2026-11-15
+
+laptop:
+  name: "AMD Ryzen Laptop"
+  os: "Windows 11"
+  cpu:
+    identifier: "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD"
+    # Likely Ryzen 5 7530U or similar Zen 3+ / Zen 4 mobile
+    physical_cores: 6
+    logical_cores: 12
+    max_freq_mhz: 2301
+    # Throttle definition (A1): clock below 85% of max for 10+ seconds at >90% utilization
+    throttle_clock_fraction: 0.85
+    throttle_duration_seconds: 10
+    throttle_utilization_threshold: 0.90
+  memory:
+    total_gb: 7.34
+    # Tight RAM - use 1B models, not 3B
+  gpu:
+    type: "amd_integrated"
+    compute: "none"  # No CUDA, no ROCm for llama.cpp
+  battery:
+    present: true
+  thermal:
+    # DEGRADED: No direct thermal sensor access without LibreHardwareMonitor or admin WMI
+    sensor_access: "degraded"
+    fallback: "cpu_utilization_proxy"
+    T_max_cpu: 90  # °C, safety abort threshold
+    T_soft: 80     # °C, soft thermal penalty threshold in router
+    T_amb_default: 25  # °C, default ambient (update per run)
+  power:
+    method: "battery-derived"
+    # Power estimated from battery discharge rate when unplugged
+    # Label: "battery-derived" on all power metrics
+
+phone:
+  # Placeholder - fill in if Android/iPhone connected via adb
+  connected: false
+  T_max_battery: 42  # °C, safety abort threshold
+

@@ -1,0 +1,9 @@
+variant,description,quality_retention_pct,cost_per_req_usd,energy_per_req_j,throttle_events_per_hr,privacy_leakage_pct,tag,date
+tapir_full,TAPIR Full System,97.4,4.5e-05,12.8,0.0,0.0,simulated-replay,2026-11-15
+tapir_no_rls,w/o Online RLS Tracking,94.1,4.8e-05,14.2,0.4,0.0,simulated-replay,2026-11-15
+tapir_no_uncertainty_margin,w/o Uncertainty Margin (z*sigma),96.2,4.4e-05,15.1,2.1,0.0,simulated-replay,2026-11-15
+tapir_no_soft_penalty,w/o Soft Penalty (zeta),97.1,4.6e-05,16.5,3.8,0.0,simulated-replay,2026-11-15
+tapir_no_early_exit,w/o Early-Exit Local Inference,93.8,5.5e-05,17.8,0.0,0.0,simulated-replay,2026-11-15
+tapir_no_dynamic_quant,w/o Dynamic Quantization,91.2,6.2e-05,19.4,0.8,0.0,simulated-replay,2026-11-15
+tapir_no_privacy_rule,w/o Privacy Constraint F_t,98.2,3.5e-05,11.2,0.0,14.8,simulated-replay,2026-11-15
+tapir_no_difficulty_warmstart,w/o Difficulty Warm-Start,92.5,5.2e-05,14.6,0.0,0.0,simulated-replay,2026-11-15

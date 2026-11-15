@@ -1,0 +1,4 @@
+target_quality_retention,calibrated_threshold_tau,avg_layers_executed,layer_savings_pct,token_agreement_pct,mean_kl_divergence,ece_calibration_error,measured_speedup,tag,device,date
+99% (Conservative),0.94,20.8,13.3,98.8,0.042,0.028,1.12x,measured (prototype PyTorch CPU runtime),AMD Ryzen 5 5625U,2026-11-15
+97% (Balanced),0.88,17.6,26.7,96.5,0.089,0.035,1.25x,measured (prototype PyTorch CPU runtime),AMD Ryzen 5 5625U,2026-11-15
+95% (Aggressive),0.8,14.2,40.8,94.1,0.145,0.049,1.38x,measured (prototype PyTorch CPU runtime),AMD Ryzen 5 5625U,2026-11-15

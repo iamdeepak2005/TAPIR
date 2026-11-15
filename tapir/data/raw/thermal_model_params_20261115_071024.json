@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "tag": "simulated",
+    "device": "AMD Ryzen 5 (Zen 4 Mobile, 6 cores)",
+    "date": "2026-11-15",
+    "timestamp": "2026-11-15T07:10:25.277969+00:00"
+  },
+  "parameters": {
+    "a": 0.983595580860985,
+    "b": 0.03503465158274014,
+    "R": 2.1356837621526252,
+    "C": 28.308407086703642,
+    "T_amb": 25.0
+  },
+  "best_rls_lambda": 0.99,
+  "horizon_evaluation": {
+    "H_10s": {
+      "MAE": 0.481,
+      "RMSE": 0.598,
+      "residual_std": 0.589
+    },
+    "H_30s": {
+      "MAE": 0.746,
+      "RMSE": 0.903,
+      "residual_std": 0.864
+    },
+    "H_60s": {
+      "MAE": 1.393,
+      "RMSE": 1.731,
+      "residual_std": 1.674
+    }
+  },
+  "persistence_evaluation": {
+    "H_10s": {
+      "MAE": 1.995,
+      "RMSE": 2.55
+    },
+    "H_30s": {
+      "MAE": 5.455,
+      "RMSE": 6.868
+    },
+    "H_60s": {
+      "MAE": 9.508,
+      "RMSE": 11.775
+    }
+  }
+}

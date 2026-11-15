@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-11-15T06:36:13.958885+00:00",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26300",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python_version": "3.12.4"
+  },
+  "cpu": {
+    "logical_cores": 12,
+    "physical_cores": 6,
+    "max_freq_mhz": 2301.0,
+    "min_freq_mhz": 0.0,
+    "current_freq_mhz": 1904.0,
+    "processor_identifier": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD"
+  },
+  "memory": {
+    "total_gb": 7.34,
+    "available_gb": 0.95,
+    "used_percent": 87.1
+  },
+  "gpu": {
+    "nvidia": "nvidia-smi not found",
+    "note": "AMD integrated GPU likely present (Ryzen mobile). No nvidia-smi.",
+    "type": "amd_integrated"
+  },
+  "battery": {
+    "percent": 38,
+    "power_plugged": false,
+    "secs_left": 4294967295,
+    "present": true
+  },
+  "thermal_sensors": {
+    "available": false,
+    "note": "sensors_temperatures not available on this platform",
+    "wmi_available": false,
+    "wmi_error": "Command '['powershell', '-Command', 'Get-CimInstance -Namespace root/WMI -ClassName MSAcpi_ThermalZoneTemperature -ErrorAction Stop | Select-Object InstanceName, CurrentTemperature | ConvertTo-Json']' timed out after 10 seconds"
+  },
+  "power_sensors": {
+    "rapl": false,
+    "note": "No RAPL on Windows. Power measurement via battery discharge rate (unplugged) or external tool.",
+    "battery_derived": true,
+    "method": "battery-derived (discharge rate when unplugged)"
+  },
+  "available_tools": {
+    "llama-cli": "not found",
+    "llama-bench": "not found",
+    "git": "C:\\Program Files\\Git\\cmd\\git.exe",
+    "cmake": "not found",
+    "gcc": "C:\\MinGW\\bin\\gcc.exe",
+    "cl": "not found",
+    "adb": "not found"
+  },
+  "python_packages_error": "Command '['C:\\\\Python312\\\\python.exe', '-m', 'pip', 'list', '--format=json']' timed out after 15 seconds",
+  "python_packages": {
+    "psutil": "6.0.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.15.1",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "PyYAML": "installed",
+    "requests": "2.32.3",
+    "torch": "2.5.1+cpu",
+    "transformers": "5.17.0",
+    "spacy": "3.8.2"
+  },
+  "python_packages_note": "Versions verified via import. pip list failed in sandbox.",
+  "constraints": {
+    "ram_total_gb": 7.34,
+    "ram_available_gb": 0.95,
+    "ram_tight": true,
+    "recommended_model_size": "1B (not 3B, due to RAM constraint)",
+    "gpu_type": "amd_integrated",
+    "gpu_compute": "no CUDA, CPU-only inference",
+    "thermal_sensors": "degraded - no direct sensor access on Windows without admin/LibreHardwareMonitor",
+    "thermal_fallback": "CPU utilization + battery discharge rate as proxies; may use Open Hardware Monitor CLI if available",
+    "power_method": "battery-derived",
+    "llama_cpp": "not installed - needs to be built or downloaded"
+  },
+  "updated_at": "2026-11-15T06:40:48.949949+00:00"
+}

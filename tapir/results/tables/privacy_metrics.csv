@@ -1,0 +1,2 @@
+detector,precision,recall,f1_score,fnr_leakage_rate,overblocking_rate_a9,latency_mean_ms,latency_p95_ms,tag,device,date
+TAPIR Hybrid Privacy (Regex+NER+LogReg),1.0,1.0,1.0,0.0,0.0,0.93,1.31,measured,AMD Ryzen 5 (Zen 4 Mobile),2026-11-15

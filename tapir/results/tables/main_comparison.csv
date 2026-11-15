@@ -1,0 +1,11 @@
+method,quality_retention_pct,quality_ci,cost_per_req_usd,energy_per_req_j,energy_ci,latency_p50_ms,latency_p95_ms,router_overhead_ms,throttle_events_per_hr,privacy_leakage_pct,privacy_overblocking_pct,offload_ratio_pct,apgr,tag,device,date
+always_local_q8,88.41,0.36,0.0,56.9,0.31,2317.9,2759.1,0.71,0.0,0.0,0.0,0.0,0.653,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+always_local_q5,85.17,0.35,0.0,43.75,0.12,2109.7,2315.1,0.66,0.0,0.0,0.0,0.0,0.557,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+always_local_q4,79.49,0.33,0.0,42.93,0.13,2422.6,2680.8,0.69,0.0,0.0,0.0,0.0,0.387,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+always_cloud,100.0,0.0,1.2e-05,10.88,1.84,500.0,2321.2,0.67,0.0,0.0,0.0,82.0,1.0,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+random,85.24,0.63,2e-06,34.02,2.92,2144.7,2529.0,0.71,0.0,0.0,0.0,14.75,0.559,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+static_threshold,85.77,0.98,4e-06,31.88,1.8,2366.9,2511.7,0.67,0.0,0.0,0.0,24.75,0.574,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+difficulty_only,79.49,0.33,0.0,42.93,0.13,2422.6,2680.8,0.75,0.0,0.0,0.0,0.0,0.387,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+thermal_unaware_linucb,96.31,0.23,1e-05,12.02,1.05,500.0,2341.8,0.73,0.0,0.0,0.0,69.5,0.89,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+reactive_thermal,79.49,0.33,0.0,42.93,0.13,2422.6,2680.8,0.67,0.0,0.0,0.0,0.0,0.387,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15
+tapir_full,96.31,0.23,1e-05,12.02,1.05,500.0,2341.8,0.73,0.0,0.0,0.0,69.5,0.89,simulated-replay (anchored to measured telemetry & quants),AMD Ryzen 5 5625U,2026-11-15

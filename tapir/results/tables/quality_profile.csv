@@ -1,0 +1,5 @@
+quantization,mmlu_accuracy_pct,gsm8k_accuracy_pct,perplexity,tag,device,date
+Q8_0,75.0,66.67,13.84,measured,AMD Ryzen 5 5625U with Radeon Graphics,2026-11-15
+Q5_K_M,75.0,66.67,13.9,measured,AMD Ryzen 5 5625U with Radeon Graphics,2026-11-15
+Q4_K_M,62.5,50.0,14.4,measured,AMD Ryzen 5 5625U with Radeon Graphics,2026-11-15
+Early-Exit Prototype (PyTorch CPU),62.5,50.0,15.1,measured (prototype PyTorch CPU runtime),AMD Ryzen 5 5625U with Radeon Graphics,2026-11-15

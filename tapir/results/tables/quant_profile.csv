@@ -1,0 +1,4 @@
+quantization,model_size_mb,peak_ram_mb,prefill_tok_per_s_mean,prefill_tok_per_s_std,decode_tok_per_s_mean,decode_tok_per_s_std,ttft_ms_mean,ttft_ms_std,mean_power_w,energy_j_per_token_mean,energy_j_per_token_std,tag,power_tag,device,date
+Q8_0,1806.8,5148.2,65.17,0.51,18.07,1.06,3928.0,31.0,24.0,1.3279,0.1224,measured,battery-derived,AMD Ryzen 5 5625U with Radeon Graphics (6 cores / 12 threads),2026-11-15
+Q5_K_M,1225.9,5194.8,140.01,6.52,17.25,2.78,1828.4,85.2,20.5,1.1886,0.238,measured,battery-derived,AMD Ryzen 5 5625U with Radeon Graphics (6 cores / 12 threads),2026-11-15
+Q4_K_M,1065.6,5194.9,111.36,6.17,15.22,2.04,2298.8,127.3,17.5,1.1497,0.2064,measured,battery-derived,AMD Ryzen 5 5625U with Radeon Graphics (6 cores / 12 threads),2026-11-15

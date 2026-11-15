@@ -1,0 +1,14 @@
+\begin{tabular}{llrrrrrll}
+\toprule
+variant & description & quality_retention_pct & cost_per_req_usd & energy_per_req_j & throttle_events_per_hr & privacy_leakage_pct & tag & date \\
+\midrule
+tapir_full & TAPIR Full System & 97.400000 & 0.000045 & 12.800000 & 0.000000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_rls & w/o Online RLS Tracking & 94.100000 & 0.000048 & 14.200000 & 0.400000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_uncertainty_margin & w/o Uncertainty Margin (z*sigma) & 96.200000 & 0.000044 & 15.100000 & 2.100000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_soft_penalty & w/o Soft Penalty (zeta) & 97.100000 & 0.000046 & 16.500000 & 3.800000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_early_exit & w/o Early-Exit Local Inference & 93.800000 & 0.000055 & 17.800000 & 0.000000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_dynamic_quant & w/o Dynamic Quantization & 91.200000 & 0.000062 & 19.400000 & 0.800000 & 0.000000 & simulated-replay & 2026-11-15 \\
+tapir_no_privacy_rule & w/o Privacy Constraint F_t & 98.200000 & 0.000035 & 11.200000 & 0.000000 & 14.800000 & simulated-replay & 2026-11-15 \\
+tapir_no_difficulty_warmstart & w/o Difficulty Warm-Start & 92.500000 & 0.000052 & 14.600000 & 0.000000 & 0.000000 & simulated-replay & 2026-11-15 \\
+\bottomrule
+\end{tabular}

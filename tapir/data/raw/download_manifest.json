@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-11-15T06:54:55.244052+00:00",
+  "downloads": {
+    "llama_cpp": {
+      "build": "b12399",
+      "semver": "v1.0.0",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12399/llama-b12399-bin-win-cpu-x64.zip",
+      "file": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\bin\\llama-b12399-bin-win-cpu-x64.zip",
+      "size_mb": 24.0,
+      "sha256": "bff9eef2221e383404bcdd2d3d190810bf0bb2f3e7b75ea62c0fd1f044999edb",
+      "cli_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\bin\\llama-cpp\\llama-cli.exe",
+      "bench_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\bin\\llama-cpp\\llama-bench.exe",
+      "status": "downloaded"
+    },
+    "gguf_Q8_0": {
+      "model": "Qwen2.5-1.5B-Instruct",
+      "quantization": "Q8_0",
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "filename": "qwen2.5-1.5b-instruct-q8_0.gguf",
+      "local_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\models\\qwen2.5-1.5b-instruct-q8_0.gguf",
+      "size_bytes": 1894532128,
+      "size_mb": 1806.8,
+      "sha256": "d7efb072e7724d25048a4fda0a3e10b04bdef5d06b1403a1c93bd9f1240a63c8",
+      "expected_sha256": null,
+      "status": "downloaded"
+    },
+    "gguf_Q5_K_M": {
+      "model": "Qwen2.5-1.5B-Instruct",
+      "quantization": "Q5_K_M",
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "filename": "qwen2.5-1.5b-instruct-q5_k_m.gguf",
+      "local_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\models\\qwen2.5-1.5b-instruct-q5_k_m.gguf",
+      "size_bytes": 1285494304,
+      "size_mb": 1225.9,
+      "sha256": "b46661073c18e5b56a41fa320975f866a00def1ff08feef4718e013258896f8c",
+      "expected_sha256": null,
+      "status": "downloaded"
+    },
+    "gguf_Q4_K_M": {
+      "model": "Qwen2.5-1.5B-Instruct",
+      "quantization": "Q4_K_M",
+      "repo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+      "filename": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "local_path": "c:\\Users\\deepa\\Research-TAPIR\\tapir\\models\\qwen2.5-1.5b-instruct-q4_k_m.gguf",
+      "size_bytes": 1117320736,
+      "size_mb": 1065.6,
+      "sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+      "expected_sha256": null,
+      "status": "downloaded"
+    }
+  },
+  "status": "complete",
+  "disk_free_gb_before": 16.67,
+  "disk_free_gb_after": 13.71,
+  "disk_used_gb": 2.96
+}
